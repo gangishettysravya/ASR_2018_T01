@@ -1,0 +1,70 @@
+Note : Computed PER using wer from asr_evaluation library
+
+a(i) 64 mixture gmm for mfcc with energy coefficients:
+
+	Accuracy : 14.108178718505071
+	PER : 88.005%
+
+a(ii) gmm for mfcc without energy coefficients:
+
+	- 2 mixtures:
+		Accuracy : 10.934552539520878
+		PER : 91.256%
+
+	- 4 mixtures:
+		Accuracy : 13.372669707301954
+		PER : 88.758%
+
+	- 8 mixtures:
+		Accuracy : 13.327502988974008
+		PER : 88.805%
+
+	- 16 mixtures:
+		Accuracy : 13.691050790417572
+		PER : 88.432%
+
+	- 32 mixtures:
+		Accuracy : 13.551565336757736
+		PER : 88.575
+
+	- 64 mixtures:
+		Accuracy : 12.98454589735642
+		PER : 89.156
+
+	- 128 mixtures:
+		Accuracy : 12.412655537351105
+		PER : 89.742
+
+	- 256 mixtures:
+		Accuracy : 11.845636097949786
+		PER : 90.323
+
+b(i) 64 mixture gmm for mfcc_delta with energy coefficients:
+
+	Accuracy : 18.5006420758978
+	PER : 83.504
+
+
+b(ii) 64 mixture gmm for mfcc_delta without energy coefficients:
+
+	Accuracy : 16.96740911304964
+	PER : 85.075
+
+
+c(i) 64 mixture gmm for mfcc_delta_delta with energy coefficients:
+
+	Accuracy : 18.918655625913296
+	PER : 83.076
+
+
+c(ii) 64 mixture gmm for mfcc_delta_delta without energy coefficients:
+
+	Accuracy: 16.705265022361953
+	PER : 85.344
+
+
+Observations :
+
+	- From the above the max accuracy we obtained is 18.918655625913296.
+	- This accuracy is obtained for 64 mixture gmm for mfcc_delta_delta with energy coefficients.
+	- So 64 mixture model is the optimal mixture model we could obtain.
